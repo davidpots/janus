@@ -19,7 +19,26 @@
 
   <body>
 
-    {{ content }}
+    <div class="bg-green pal mbxl">
+      <h1 class="h0 center white mbs">Janus</h1>
+      <p class="h3 center white mbs">Lightweight CSS framework</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-right col-3">
+          <ul class="mtm list-plain">
+            <li><a href="/">Intro</a></li>
+            {% for pattern in site.patterns %}
+            <li><a href="{{ pattern.url }}">{{ pattern.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col col-left col-9">
+          {{ content }}
+        </div>
+      </div>
+    </div>
 
   </body>
 

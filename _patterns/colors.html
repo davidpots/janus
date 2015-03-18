@@ -1,0 +1,48 @@
+---
+layout: default
+title: Colors
+permalink: /colors/
+colors:
+  - name: Aqua
+    hex:  7FDBFF
+  - name: Navy
+    hex:  001f3f
+  - name: Blue
+    hex:  0074D9
+  - name: Teal
+    hex:  39CCCC
+  - name: Orange
+    hex:  FF851B
+  - name: Red
+    hex:  FF4136
+  - name: Maroon
+    hex:  85144b
+  - name: Fuchsia
+    hex:  F012BE
+  - name: Purple
+    hex:  B10DC9
+  - name: Black
+    hex:  111111
+  - name: Gray
+    hex:  AAAAAA
+  - name: Silver
+    hex:  DDDDDD
+  - name: Olive
+    hex:  3D9970
+  - name: Green
+    hex:  2ECC40
+  - name: Lime
+    hex:  01FF70
+  - name: Yellow
+    hex:  FFDC00
+---
+
+    <div class="container">
+
+      <h1>Colors</h1>
+      <p>Janus uses the excellent <a href="http://clrs.cc/">Colors</a> defaults made by <a href="http://mrmrs.cc/">Adam Morse</a>.</p>
+      {% for color in page.colors %}
+        <div class="pam center white man left" style="background-color: #{{ color.hex }}">{{ color.name }}</div>
+      {% endfor %}
+
+    </div>
