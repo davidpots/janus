@@ -11,9 +11,7 @@
           -webkit-text-size-adjust: 100%;
         }
 
-        a,
-        a:hover,
-        a:visited {
+        a {
           color: $link-color;
           text-decoration: none;
         }
@@ -82,23 +80,19 @@
 //  ----------------------------------------------------------------------------
 
         pre, code, samp {
+          font-family: $font-family--monospace;
+          font-size: $font-size--small;        
+        }
+
+        pre, samp {
           background-color: $gray-light;
           border-radius: $border-radius;
-          font-family: $font-family--monospace;
-          font-size: $font-size--small;
-        }
-        
-        code {
-          padding: 2px 4px;
-        }
-        
-        pre {
           margin-top: $space--large;
           margin-bottom: $space--large;
           overflow: auto;
           padding: $space--large;
         }
-
+        
 //  ----------------------------------------------------------------------------
 //  Misc. generic elements
 //  ----------------------------------------------------------------------------
