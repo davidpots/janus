@@ -28,9 +28,9 @@
       <div class="row">
         <div class="col col-right col-3">
           <ul class="mtm list-plain">
-            <li><a href="/">Intro</a></li>
+            <li><a href="{{site.baseurl}}">Intro</a></li>
             {% for pattern in site.patterns %}
-            <li><a href="{{ pattern.url | prepend: site.baseurl }}">{{ pattern.title }}</a></li>
+            <li><a href="{{ site.baseurl }}{{ pattern.url }}">{{ pattern.title }}</a></li>
             {% endfor %}
           </ul>
         </div>
