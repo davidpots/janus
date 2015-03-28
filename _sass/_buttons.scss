@@ -25,7 +25,7 @@ $ui-padding:         .875rem;
   white-space: nowrap;
   display: inline-block;
   height: auto;
-  padding: $button-padding-y $button-padding-x ($button-padding-y * .85);
+  padding: $button-padding-y $button-padding-x;
   border-radius: $border-radius;
   &:hover,
   &:focus {
@@ -92,13 +92,13 @@ $ui-padding:         .875rem;
   font-size: $font-size--small;
 }
 
-
-
-
-.icon {
-  width: 1rem;
-  height: 1rem;
-  position: relative;
-  top: .1625rem;
-  margin-right: .2rem;
+// Icons in button
+.button {
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top: .1625rem;
+    margin-right: .2rem;
+  }
 }
